@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFabricationPage2">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:background="#00FFFFFF"
+        android:text="Education Details"
+        android:textAllCaps="true"
+        android:textColor="#11223A"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sub_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="#00FFFFFF"
+        android:text="Select you highest qualification"
+        android:textAllCaps="true"
+        android:textColor="#11223A"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heading" />
+
+
+    <TextView
+        android:id="@+id/next_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/button_blue_fill"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="8sp"
+        android:text="Next"
+        android:textAlignment="gravity"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:padding="24dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/next_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sub_heading">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/graduate_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pg_card"
+            android:layout_alignParentStart="true"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:id="@+id/graduate_text"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_blue_stroke"
+                android:padding="16dp"
+                android:text="Graduate / DIP"
+                android:textAlignment="center"
+                android:textColor="#11223A"
+                android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/xii_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pg_card"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:id="@+id/xii_text"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_blue_stroke"
+                android:padding="16dp"
+                android:text="Class XII"
+                android:textAlignment="center"
+                android:textColor="#11223A"
+                android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/phd_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:id="@+id/phd_text"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_blue_stroke"
+                android:padding="16dp"
+                android:text="PhD / Doctrate"
+                android:textAlignment="center"
+                android:textColor="#11223A"
+                android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/pg_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:id="@+id/pg_text"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_blue_stroke"
+                android:padding="16dp"
+                android:text="Post-Graduate"
+                android:textAlignment="center"
+                android:textColor="#11223A"
+                android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/belowx_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/graduate_card"
+            android:layout_alignParentStart="true"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:id="@+id/belowx_text"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_blue_stroke"
+                android:padding="16dp"
+                android:text="Below X"
+                android:textAlignment="center"
+                android:textColor="#11223A"
+                android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/x_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xii_card"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:id="@+id/x_text"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_blue_stroke"
+                android:padding="16dp"
+                android:text="Class X"
+                android:textAlignment="center"
+                android:textColor="#11223A"
+                android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="125dp"
+        android:padding="24dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/next_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selected_heading">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btech_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:id="@+id/btech_text"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_blue_stroke"
+                android:padding="16dp"
+                android:text="B.Tech"
+                android:textAlignment="center"
+                android:textColor="#11223A"
+                android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bcom_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:id="@+id/bcom_text"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_blue_stroke"
+                android:padding="16dp"
+                android:text="B.Com"
+                android:textAlignment="center"
+                android:textColor="#11223A"
+                android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bsc_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btech_card"
+            android:layout_alignParentStart="true"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:id="@+id/bsc_text"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_blue_stroke"
+                android:padding="16dp"
+                android:text="B.Sc"
+                android:textAlignment="center"
+                android:textColor="#11223A"
+                android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/diploma_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bcom_card"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:id="@+id/diploma_text"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_blue_stroke"
+                android:padding="16dp"
+                android:text="B.Com"
+                android:textAlignment="center"
+                android:textColor="#11223A"
+                android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bca_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bsc_card"
+            android:layout_alignParentStart="true"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:id="@+id/bca_text"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_blue_stroke"
+                android:padding="16dp"
+                android:text="B.C.A"
+                android:textAlignment="center"
+                android:textColor="#11223A"
+                android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bba_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/diploma_card"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:id="@+id/bba_text"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_blue_stroke"
+                android:padding="16dp"
+                android:text="B.B.A / B.M.S"
+                android:textAlignment="center"
+                android:textColor="#11223A"
+                android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/selected_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:background="#00FFFFFF"
+        android:text="Select you highest qualification"
+        android:textAllCaps="true"
+        android:textColor="#11223A"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selected_card" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/selected_card"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_blue_stroke"
+        android:padding="16dp"
+        android:text="Graduate / DIP"
+        android:textAlignment="center"
+        android:textColor="#11223A"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sub_heading" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
