@@ -3,6 +3,7 @@ package com.example.findest;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
@@ -44,7 +45,7 @@ public class ProfileFabricationPage2 extends AppCompatActivity {
         next_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(ProfileFabricationPage2.this, "Next clicked!", Toast.LENGTH_SHORT).show();;
+                startActivity(new Intent(getApplicationContext(), KeySkillsActivity.class));
             }
         });
 
