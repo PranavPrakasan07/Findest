@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Findest">
-        <activity android:name=".KeySkillsActivity"></activity>
+        <activity android:name=".IntroductionToRecuiter"></activity>
+        <activity android:name=".WorkPreferencesActivity" />
+        <activity android:name=".KeySkillsActivity" />
         <activity android:name=".ProfileFabricationPage2" />
         <activity android:name=".ProfileFabricationPage1" />
         <activity android:name=".RegisterActivity" />
